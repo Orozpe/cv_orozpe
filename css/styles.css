@@ -3426,13 +3426,13 @@ textarea.form-control-lg {
 }
 
 .btn-outline-dark {
-  color: #212529;
-  border-color: #212529;
+  color: #8598B1;
+  border-color: #8598B1;
 }
 .btn-outline-dark:hover {
   color: #fff;
   background-color: #212529;
-  border-color: #212529;
+  border-color: #FFF;
 }
 .btn-check:focus + .btn-outline-dark, .btn-outline-dark:focus {
   box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.5);
@@ -3981,7 +3981,6 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color:#000;
 }
 
 .nav-fill > .nav-link,
@@ -4034,6 +4033,7 @@ textarea.form-control-lg {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
+  margin-left: 1rem;
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
@@ -4114,8 +4114,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
   }
   .navbar-expand-sm .navbar-nav-scroll {
     overflow: visible;
@@ -4167,8 +4167,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
   }
   .navbar-expand-md .navbar-nav-scroll {
     overflow: visible;
@@ -4220,8 +4220,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
   }
   .navbar-expand-lg .navbar-nav-scroll {
     overflow: visible;
@@ -4273,8 +4273,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-xl .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
   }
   .navbar-expand-xl .navbar-nav-scroll {
     overflow: visible;
@@ -11364,19 +11364,17 @@ html {
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
-    font-size: 1.75em;
+    font-size: 1.2em;
     transition: font-size 0.3s;
   }
   #mainNav .navbar-nav {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
-    background: #000;
+    color: #000;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #000;
   }
 
   #mainNav.navbar-shrink {
@@ -11406,11 +11404,17 @@ html {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
-  background-color: #fff;
+  padding-top: calc(0rem + 74px);
+  max-width: 100%;
+  margin-top: -8%;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+  object-fit: cover;
+  padding-top: 110px;
 }
-.masthead .masthead-heading {
+/* .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
 }
@@ -11419,12 +11423,14 @@ html {
 }
 .masthead .masthead-avatar {
   width: 15rem;
-}
+} */
 
 @media (min-width: 992px) {
   .masthead {
     padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    padding-bottom: 25rem;
+    align-items: center;
+    height: auto;
   }
   .masthead .masthead-heading {
     font-size: 4rem;
@@ -11504,8 +11510,7 @@ hr {
   height: 20px;
 }
 .portada{
-  width: 95%;
-  margin-top: -3%;
+  width: 100%;
 }
 .separador{
   height: 10px;
@@ -11514,3 +11519,123 @@ hr {
   border-radius: 5px 2px 5px 2px;
   background: linear-gradient(135deg,#3454F5 0%,#9658fe 100%);
 }
+
+/*-------------------------------------------------------*/
+/*------------   DARK MODE ------------------------------*/
+/*-------------------------------------------------------*/
+body {
+  background-color: white;
+  transition: .3s ease all;
+  font-size: 20px;
+  overflow-x:hidden; 
+}
+body.dark {
+  background-color: #303134;
+  color: white;
+}
+
+.switch {
+  background-color: black;
+  color: #f0f0f0;
+  border-radius: 100px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+
+.switch::after{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color:white;/*color de la bolita de nuestro switch*/
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: .3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.8);
+}
+.switch.active {/*color del switch mode black*/
+  background-color:white;
+  color:black;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+}
+/* FIN DE MODO NOCTURNO */
+
+.red{
+  color: white;
+  font-size: 40px;
+}
+.red:hover{
+  color: #1a252f;
+}
+.img-container {
+	position: relative;
+	height: 410px;
+	max-width: 100%;
+	display: flex;
+	align-items:flex-start;
+	justify-content:flex-start;
+	overflow: hidden;
+  margin-top: -50px;
+	}
+.img-container img {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+	}
+  
+  a {
+    text-decoration:none;
+    color:#FFF;
+  }
+  .rainbow-button {
+    width:calc(15vw + 6px);
+    height:calc(4vw + 6px);
+    background-image: linear-gradient(90deg, #00C0FF 0%, #BC92C0 49%, #BC92C0 80%, #00C0FF 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1vw;
+    font-weight:bold;
+    width: 200px;
+
+  }
+  .rainbow-button:after {
+    content:attr(alt);
+    width:95%;
+    height:90%;
+    background-color:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: #fff;
+  }
+  .rainbow-button:hover {
+    animation:slidebg 2s linear infinite;
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }

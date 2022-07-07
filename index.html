@@ -21,31 +21,33 @@
     </head>
 
     <body id="page-top">
-        <!-- Navegacion-->
+        <!-- Navegation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#page-top">Ingenieria Informática</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-secondary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#page-top">Inicio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre mi</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portafolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#curriculum">Curriculum</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
-
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#about">Perfil</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#portfolio">Portafolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#curriculum">Curriculum</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
                     </ul>
+                    <button class="switch" id="switch">
+                        <span><i class="fas fa-sun"></i></span>
+                        <span><i class="fas fa-moon"></i></span>
+                    </button>
                 </div>
             </div>
         </nav>
         <!-- Header -->
-        <header class="masthead bg-primary text-white text-center">
-            <img class="portada" src="assets/img/fondo.jpg" alt="..." />
+        <header class="masthead">
+            <img class="portada" src="assets/img/fondo.png" alt="..." />
         </header>
         <!-- Sobre mi -->
-        <section class="page-section text-black" id="about">
+        <section class="page-section" id="about">
             <div class="container">
                 <!-- About me section -->
                 <div class="row">
@@ -91,34 +93,35 @@
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <div class="portfolio-item-caption-content text-center text-white">
                                             <h5 class="mb-3">Proyectos escolares</h5>
-                                            <i class="fas fa-plus fa-3x"></i>
+                                            <h5><a href="#" class="rainbow-button text-white" alt="Ver más">
+                                            </a></h5>
                                         </div>
                                 </div>
                                     <img class="img-fluid" src="assets/img/portfolio/escolares/diseños.gif"/>
                                 </div>
                             </div>
                             <!-- Portfolio Item 2-->
-                            <div class="col-md-4 mb-3">
+                            <div class="col-md-4 mb-3 text-center">
                                 <div class="portfolio-item mx-auto">
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <div class="portfolio-item-caption-content text-center text-white">
                                             <h5 class="mb-3">Servicio Social</h5>
-                                            <i class="fas fa-plus fa-3x"></i>
+                                            <h5><a href="#" class="rainbow-button text-white" alt="Ver más">
+                                            </a></h5>
                                         </div>
                                     </div>
                                     <img class="img-fluid" src="assets/img/portfolio/SS/designweb.gif" alt="..." />
                                 </div>
                             </div>
-                            <!-- Portfolio Item 3-->
-                            <div class="col-md-4 mb-3">
+                             <!-- Portfolio Item 3-->
+                             <div class="col-md-4 mb-3 text-center">
                                 <div class="portfolio-item mx-auto">
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <a href="escolares.php">
                                         <div class="portfolio-item-caption-content text-center text-white">
-                                            <h5 class="mb-3">Residencias Profesionales</h5>
-                                            <i class="fas fa-plus fa-3x"></i>
+                                            <h5 class="mb-3">Residencias</h5>
+                                            <h5><a href="#" class="rainbow-button text-white" alt="Ver más">
+                                            </a></h5>
                                         </div>
-                                        </a>
                                     </div>
                                     <img class="img-fluid" src="assets/img/portfolio/RP/diseños.gif" alt="..." />
                                 </div>
@@ -127,27 +130,27 @@
                     </div>
         </section>
         <!-- Curriculum Section-->
+
         <section class="page-section" id="curriculum">
             <div class="container">
-
-                <!-- Demostración -->
-                    <div class=" curriculum align-items-center justify-content-center">
-                        <img src="assets/cv.png" class="portada"  alt="..." >
-                    </div>
+                <!-- Preview-->
+                <div class="img-container align-items-center">
+                    <img src="assets/cv.png" alt="..." />
+                </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-2">
                     <form method="post" action="export.php">
                         <a class="btn btn-xl btn-outline-dark" href="docs/cv.pdf" target="_blank">
                             <i class="fa fa-eye me-2"></i>Ver
                         </a>
-                        <button type="submit" name="exportar" value="exportar" class="btn btn-xl btn-danger">
-                        <i class="fa fa-download me-2"></i>Descargar</button>
+                        <!-- <button type="submit" name="exportar" value="exportar" class="btn btn-xl btn-danger">
+                        <i class="fa fa-download me-2"></i>Descargar</button> -->
                     </form>
                 </div>
             </div>
         </section> 
         <!-- Contact Section-->
-        <section class="page-section text-black mb-0" id="contact">
+        <section class="page-section mb-0" id="contact">
             <div class="container bg-secundary">
                 <div class="row bg-secundary">
                     <!-- Footer Social Icons-->
@@ -166,19 +169,19 @@
                                 </li>
                             </ul>
                     </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="col-lg-4 mb-5 mb-lg-0 text-center">
                         <h4 class="text-uppercase mb-4">Redes Sociales</h4>
                         <div class="separador"></div>
-                        <a class="btn btn-outline-dark btn-social mx-1" href="https://join.skype.com/invite/vLCrz2vAJCSz" target="_blanck">
+                        <a class="red btn btn-social mx-1 bg-secondary" href="https://join.skype.com/invite/vLCrz2vAJCSz" target="_blanck">
                             <i class="fab fa-skype" aria-hidden="true"></i>
                         </a>
-                        <a class="btn btn-outline-dark btn-social mx-1" href="https://www.instagram.com/kim_galletita/?hl=es" target="_blanck">
+                        <a class="red btn btn-social mx-1 bg-secondary" href="https://www.instagram.com/kim_galletita/?hl=es" target="_blanck">
                             <i class="fab fa-telegram"></i>
                         </a>
-                        <a class="btn btn-outline-dark btn-social mx-1" href="https://wa.me/qr/UEJM6HAAHAMPP1" target="_blanck">
+                        <a class="red btn btn-social mx-1 bg-secondary" href="https://wa.me/qr/UEJM6HAAHAMPP1" target="_blanck">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <a class="btn btn-outline-dark btn-social mx-1" href="https://www.youtube.com/channel/UCuHS04ykG6GLEuiTyA2jv5Q" target="_blanck">
+                        <a class="red btn btn-social mx-1 bg-secondary" href="https://www.youtube.com/channel/UCuHS04ykG6GLEuiTyA2jv5Q" target="_blanck">
                             <i class="fab fa-youtube" aria-hidden="true"></i>
                         </a>
                     </div>  
@@ -197,3 +200,4 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
+<script src="js/main.js"></script>
