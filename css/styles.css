@@ -11432,6 +11432,9 @@ html {
     align-items: center;
     height: auto;
   }
+  .dark_mode{
+    height: 80px;
+  }
   .masthead .masthead-heading {
     font-size: 4rem;
     line-height: 3.5rem;
@@ -11523,6 +11526,30 @@ hr {
 /*-------------------------------------------------------*/
 /*------------   DARK MODE ------------------------------*/
 /*-------------------------------------------------------*/
+.dark_mode{
+  background-color: rgba(0,0,0, 0.4);
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 5s;
+} 
+@keyframes example {
+  from {background-color: rgba(255, 255, 255, 0.1);}
+  to {background-color: rgba(0, 0, 0, 0.4);}
+}
+.light_mode{
+  background-color: rgba(255,255,255, 0.1);
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  animation-name: example2;
+  animation-duration: 5s;
+} 
+@keyframes example2 {
+  from {background-color: rgba(0, 0, 0, 0.4);}
+  to {background-color: rgba(255, 255, 255, 0.1);}
+}
 body {
   background-color: white;
   transition: .3s ease all;
