@@ -18,24 +18,26 @@
         gtag('js', new Date());
         gtag('config', 'G-8TM4F0M5RD');
         </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body id="page-top">
         <!-- Navegation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Ingenieria Informática</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-secondary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <a class="navbar-brand" href="#page-top">Ingeniería Informática</a>
+				<button class="navbar-toggler text-uppercase font-weight-bold bg-secondary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="">
+					<i class="fas fa-bars"></i>
+				</button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#about">Perfil</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#portfolio">Portafolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#curriculum">Curriculum</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
-                    </ul>
-                    <button class="switch" id="switch">
+                        <li class="nav-item mx-3 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#about">Perfil</a></li>
+                        <li class="nav-item mx-3 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#portfolio">Portafolio</a></li>
+                        <li class="nav-item mx-3 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#curriculum">CV</a></li>                        
+                        <li class="nav-item mx-3 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#referencias">Referencias</a></li>
+<!--                         <li class="nav-item mx-3 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
+                         -->                    </ul>
+                    <button class="switch mx-3" id="switch">
                         <span><i class="fas fa-sun"></i></span>
                         <span><i class="fas fa-moon"></i></span>
                     </button>
@@ -44,20 +46,18 @@
         </nav>
         <!-- Header -->
         <header class="masthead">
-            <img class="portada" src="assets/img/fondo.png" alt="..." />
+            <img id="imagen" class="portada" src="assets/img/fondo.png" alt="..." />
+            <div id="dark_mode" class="" style="display: block;">
+                <p class="text-black"></p>
+            </div> 
         </header>
         <!-- Sobre mi -->
         <section class="page-section" id="about">
             <div class="container">
                 <!-- About me section -->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
-                            <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
-                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                          </svg>
-                        <div class="sepicon"></div>
-                        
+                    <div class="col-lg-6 text-center">
+                        <img src="assets/img/profile.png" class="profile">
                         <h3>Perfil Profesional</h3>
                         <p class="lead">
                         Soy una persona proactiva comprometida a contribuir con las mejores soluciones para 
@@ -65,14 +65,8 @@
                         desempeñando mis valores, motivación, compromiso, creatividad y dedicación.
                         </p>
                     </div>
-                    <div class="col-lg-4 me-auto text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
-                            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
-                            <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                          </svg>
-                        <div class="sepicon"></div>
+                    <div class="col-lg-6 me-auto text-center">
+                        <img src="assets/img/target.png" class="profile">
                         <h3>Objetivo Profesional</h3>
                         <p class="lead">
                         Fortalecer mis habilidades, en un ambiente laboral de respeto, confianza y
@@ -93,8 +87,8 @@
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <div class="portfolio-item-caption-content text-center text-white">
                                             <h5 class="mb-3">Proyectos escolares</h5>
-                                            <h5><a href="#" class="rainbow-button text-white" alt="Ver más">
-                                            </a></h5>
+                                            <a href="portafolio/school.php" class="rainbow-button text-white" alt="Ver más">
+                                            </a>
                                         </div>
                                 </div>
                                     <img class="img-fluid" src="assets/img/portfolio/escolares/diseños.gif"/>
@@ -106,8 +100,8 @@
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <div class="portfolio-item-caption-content text-center text-white">
                                             <h5 class="mb-3">Servicio Social</h5>
-                                            <h5><a href="#" class="rainbow-button text-white" alt="Ver más">
-                                            </a></h5>
+                                            <a href="#" class="rainbow-button text-white" alt="Ver más">
+                                            </a>
                                         </div>
                                     </div>
                                     <img class="img-fluid" src="assets/img/portfolio/SS/designweb.gif" alt="..." />
@@ -130,7 +124,6 @@
                     </div>
         </section>
         <!-- Curriculum Section-->
-
         <section class="page-section" id="curriculum">
             <div class="container">
                 <!-- Preview-->
@@ -143,61 +136,161 @@
                         <a class="btn btn-xl btn-outline-dark" href="docs/cv.pdf" target="_blank">
                             <i class="fa fa-eye me-2"></i>Ver
                         </a>
-                        <!-- <button type="submit" name="exportar" value="exportar" class="btn btn-xl btn-danger">
+                        <!-- <button type="submit" name="exportar" value="exportar" lass="btn btn-xl btn-danger">
                         <i class="fa fa-download me-2"></i>Descargar</button> -->
                     </form>
                 </div>
             </div>
         </section> 
         <!-- Contact Section-->
-        <section class="page-section mb-0" id="contact">
-            <div class="container bg-secundary">
-                <div class="row bg-secundary">
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-6 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4 text-center">Referencias Laborales</h4>
-                        <div class="separador"></div>
-                            <ul>
-                                <li>Omar Pérez Romero: Gerente de Gestión de Negocios
-                                    <br>Tel: 55 4121 3786 /55 1796 8810
-                                </li>
-                                <li>Isaac Filiberto García Zaragoza: Jefe de Centro de Cómputo TESCHA
-                                    <br>Tel: 55 2668 4494
-                                </li>
-                                <li>Elizabeth Oropeza: Product Owner en Dixi Project
-                                    <br>Tel: 55 4472 7793
-                                </li>
-                            </ul>
-                    </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0 text-center">
-                        <h4 class="text-uppercase mb-4">Redes Sociales</h4>
-                        <div class="separador"></div>
-                        <a class="red btn btn-social mx-1 bg-secondary" href="https://join.skype.com/invite/vLCrz2vAJCSz" target="_blanck">
-                            <i class="fab fa-skype" aria-hidden="true"></i>
-                        </a>
-                        <a class="red btn btn-social mx-1 bg-secondary" href="https://www.instagram.com/kim_galletita/?hl=es" target="_blanck">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                        <a class="red btn btn-social mx-1 bg-secondary" href="https://wa.me/qr/UEJM6HAAHAMPP1" target="_blanck">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <a class="red btn btn-social mx-1 bg-secondary" href="https://www.youtube.com/channel/UCuHS04ykG6GLEuiTyA2jv5Q" target="_blanck">
-                            <i class="fab fa-youtube" aria-hidden="true"></i>
-                        </a>
-                    </div>  
-                </div>
-            </div>
-        </section>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Gracias por tu visita</small></div>
-        </div>
+        <section class="page-section" id="referencias">
+            <div class="container">
+						<!-- <h4 class="text-uppercase mb-4 text-center">Referencias Laborales</h4 -->
+                <div>
+						 <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+						 <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+						 <div class="ref mb-5">
+							<div class="referencias" style="--clref:#A18594;">
+								<div class="toggle">
+									<button type="button" onclick="product_calif(value=1)">
+										<span></span>
+									</button>  
+								</div>
+								<div class="content-ref">
+									<div class="content">
+										<p>Omar Pérez<br>
+										<span>Gerente de gestión de negocios</span>
+										</p>
+									</div>
+									<div class="red_box">
+										<a href="">
+											<i class="fa-brands fa-whatsapp"></i>
+										</a>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+									<h6 class="mt-2 text-white">55 1796 8810 </h6>									</div>
+								</div>
+							</div>		 	
+						</div>
+						 <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+						 <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+						 <div class="ref mb-5">
+							<div class="referencias" id="ref2" style="--clref:#AB90B9;">
+								<div class="toggle"> 
+									<button type="button" class="" onclick="product_calif(value=2)">
+										<span></span>
+									</button>  
+								</div>
+								<div class="content-ref">
+									<div class="content">
+										<p>Elizabeth Oropeza<br>
+										<span>Product Owner en Dixi Project</span>
+										</p>
+									</div>
+									<div class="red_box">
+										<a href="">
+											<i class="fa-brands fa-telegram"></i>
+										</a>
+										<h6 class="mt-2 text-white">55 4472 7793 </h6>	
+									</div>
+								</div>
+							</div>
+</div>
+						 <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+						 <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+						 <div class="ref mb-5">
+							<div class="referencias" id="ref3" style="--clref:#B19CD9;">
+								<div class="toggle">   
+									<button type="button" class="" onclick="product_calif(value=3)">
+										<span></span>
+									</button>
+								</div>
+								<div class="content-ref">
+									<div class="content">
+										<p>Isaac García<br>
+										<span>Centro de Cómputo TESCHA</span>
+										</p>
+									</div>
+
+									<div class="red_box">
+										<a href="">
+											<i class="fa-brands fa-whatsapp"></i>
+										</a>
+										<h6 class="mt-2 text-white">55 2668 4494</h6>	
+									</div>
+								</div>
+							</div>
+</div>                    	
+                 </div>
+				</div>
+		</section>
+        <!-- Contact Section-->
+<!--         <section class="page-section mb-0" id="contact">
+                 <div class="container">
+                    <div class="separador"></div>
+                        <h4 class="text-uppercase mb-4 text-center">Redes Sociales</h4>
+                     <div class="separador"></div>
+        						<ul class="social">
+        							<li style="--clr:#30A7DF;">
+        								<a href="https://www.instagram.com/kim_galletita/?hl=es" target="_blanck">
+        									<i class="fa-brands fa-telegram"></i>
+        								</a>
+        							</li>
+        							<li style="--clr:#56F672;">
+        								<a href="https://wa.me/qr/UEJM6HAAHAMPP1" target="_blanck">
+        									<i class="fa-brands fa-whatsapp"></i>
+        								</a>
+        							</li>
+        							<li style="--clr:#00B4ED;">
+        								<a href="https://join.skype.com/invite/vLCrz2vAJCSz" target="_blanck">
+        									<i class="fa-brands fa-skype"></i>
+        								</a>
+        							</li>
+        							<li style="--clr:#c4302b;">
+        								<a href="https://www.youtube.com/channel/UCuHS04ykG6GLEuiTyA2jv5Q" target="_blanck">
+        									<i class="fa-brands fa-youtube"></i>
+        								</a>
+        							</li>
+        						</ul>
+                    </div>  
+        </section> -->
+        <!-- Copyright Section-->
+        <div class="copyright text-center text-white col-lg-12 bg-secondary">
+            <h1 style="padding-top: 20px;">¡Gracias por tu visita!</h1>
+           <ul class="end-info">
+           	<li>Cookies</li>
+            <li>Política de privacidad</li>
+           	<li>Aviso Legal</li>    
+           </ul>
+  			<p style="margin-left: 20px; margin-right: 20px; font-weight: bold;">Para mas información comunicate conmigo a través de mis redes sociales:</p>
+            <ul class="social">
+							<li style="--clr:#30A7DF;">
+								<a href="https://t.me/Orozpe" target="_blanck">
+									<i class="fa-brands fa-telegram"></i>
+								</a>
+							</li>
+							<li style="--clr:#5BF87C;">
+								<a href="https://wa.me/qr/UEJM6HAAHAMPP1" target="_blanck">
+									<i class="fa-brands fa-whatsapp"></i>
+								</a>
+							</li>
+							<li style="--clr:#00B4ED;">
+								<a href="https://join.skype.com/invite/vLCrz2vAJCSz" target="_blanck">
+									<i class="fa-brands fa-skype"></i>
+								</a>
+							</li>
+							<li style="--clr:#c4302b;">
+								<a href="https://www.youtube.com/channel/UCuHS04ykG6GLEuiTyA2jv5Q" target="_blanck">
+									<i class="fa-brands fa-youtube"></i>
+								</a>
+							</li>
+						</ul>        
+        </div>
     </body>
 </html>
+<script src="js/ref.js"></script>
 <script src="js/main.js"></script>
+ <!-- Bootstrap core JS-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- Core theme JS-->
+ <script src="js/scripts.js"></script>
+ <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
