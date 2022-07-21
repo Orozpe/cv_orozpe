@@ -20,3 +20,11 @@ function product_calif(id_producto) {
 
 	}
 }
+
+var typed = new Typed(".auto-type", {
+	strings: ["Orozpe","Ingeniera Informática"],
+	typeSpeed: 150,
+	backSpeed: 150,
+	loop:true
+
+})

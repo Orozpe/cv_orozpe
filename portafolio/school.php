@@ -1,8 +1,6 @@
-<?php
-require 'header.html';
-?>
+<?php require 'header.html'; ?>
 
-<h1>Hola como estas</h1>
+<h1>Hola  estas</h1>
 
 
 <?php
