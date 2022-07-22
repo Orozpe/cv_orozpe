@@ -3423,8 +3423,8 @@ textarea.form-control-lg {
 }
 
 .btn-outline-dark {
-  color: #8598B1;
-  border-color: #8598B1;
+  color: #000;
+  border-color: #000;
 }
 .btn-outline-dark:hover {
   color: #fff;
@@ -11425,9 +11425,9 @@ html {
 }
 
 .masthead {
-  padding-top: calc(0rem + 74px);
+  /* padding-top: calc(6rem + 74px); */
   max-width: 100%;
-  margin-top: -8%;
+  margin-top: -10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11449,7 +11449,6 @@ html {
 @media (min-width: 992px) {
   .masthead {
     padding-top: calc(6rem + 104px);
-    padding-bottom: 25rem;
     align-items: center;
     height: auto;
   }
