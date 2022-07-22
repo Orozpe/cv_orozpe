@@ -12,6 +12,8 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Ubicación de estilos css )-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/index.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -26,110 +28,118 @@
         <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand mt-2" href="#page-top">Ingeniería Informática</a>
-				<button class="navbar-toggler bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: -20px;">
-					<i class="fas fa-bars"></i>
-				</button>
+                <button class="navbar-toggler bg-secondary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: -20px;">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-3 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#about">Perfil</a></li>
-                        <li class="nav-item mx-3 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#portfolio">Portafolio</a></li>
+                        <li class="nav-item mx-3 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#portfolio">Experiencia</a></li>
                         <li class="nav-item mx-3 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#curriculum">CV</a></li>                        
-                        <li class="nav-item mx-3 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#referencias">Referencias</a></li>
-<!--                         <li class="nav-item mx-3 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
-                         -->                    </ul>
-                    <button class="switch mx-3" id="switch">
-                        <span><i class="fas fa-sun"></i></span>
-                        <span><i class="fas fa-moon"></i></span>
-                    </button>
+                        <li class="nav-item mx-3 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#referencias">Referencias</a></li>  
+                        <li>
+                            <button class="switch mx-3" id="switch">
+                                <span><i class="fas fa-sun"></i></span>
+                                <span><i class="fas fa-moon"></i></span>
+                            </button>
+                        </li>
+            </ul>  
                 </div>
             </div>
         </nav>
-        <!-- Header -->
-        <header class="masthead">
-            <!-- <div class="portada">
-            <img id="imagen" class="img_portada" src="assets/img/fondo.png" alt="..." />
-            </div> -->
+       <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+       <!-- ☆.。HEADER .:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+       <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+       <header class="masthead">
             <div class="img-portada">
-                <img src="assets/img/fondo.png" class="img-fluid-portada"><br><br>
+                <img src="assets/cv_portada.jpg" class="img-fluid-portada"><br><br>
+            </div>
+            <div class="text-center titles">
+                <h1 class="title-1">¡Hola!</h1>
+                <h1 class="title-2">Soy <spand class="auto-type"></spand> </h1>
+                <h1 class="title-3">"Todo inicio con un hola mundo"</h1>
             </div>
             <div id="dark_mode" class="img-portada" style="display: block;">
                 <p class="text-black"></p>
             </div> 
         </header>
-        <!-- Sobre mi -->
-        <section class="page-section" id="about">
+        <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+        <!-- ☆.☆.☆ ABOUT ME .:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+        <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+        <section class="page-section section-color" id="about" style="--clr-section:#E8EAE9;">
             <div class="container">
-                <!-- About me section -->
                 <div class="row">
                     <div class="col-lg-6 text-center">
                         <img src="assets/img/profile.png" class="profile">
                         <h3>Perfil Profesional</h3>
                         <p class="lead">
-                        Soy una persona proactiva comprometida a contribuir con las mejores soluciones para 
-                        resolver problemáticas, así como brindar las herramientas y estrategias de mejora continua, 
-                        desempeñando mis valores, motivación, compromiso, creatividad y dedicación.
+                            Soy una persona proactiva comprometida a contribuir con las mejores soluciones 
+                            para resolver problemáticas, así como brindar las herramientas y estrategias 
+                            de mejora continua, desempeñando mis valores, motivación, compromiso, creatividad y dedicación.
                         </p>
                     </div>
                     <div class="col-lg-6 me-auto text-center">
                         <img src="assets/img/target.png" class="profile">
                         <h3>Objetivo Profesional</h3>
                         <p class="lead">
-                        Fortalecer mis habilidades, en un ambiente laboral de respeto, confianza y
-                        libre de creatividad, mostrando siempre una actitud positiva ante cualquier adversidad. 
+                            Fortalecer mis habilidades en diferentes áreas, buscando el constante aprendizaje, en un ambiente laboral de respeto, confianza y creativo. 
+                            Mostrando siempre una actitud positiva ante cualquier adversidad. 
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Portfolio-->
+        <div id="wave" class="wave-cont" style="--clr-section:#E8EAE9;"></div>
+
+        <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+        <!-- ☆.☆.☆ PORTFOLIO .:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+        <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
         <section class="page-section portfolio" id="portfolio">
-                    <div class="container">
-                     <!-- Portfolio-->
-                        <div class="row justify-content-center">
-                            <!-- Portfolio Item 1-->
-                            <div class="col-md-4 mb-3">
-                                <div class="portfolio-item mx-auto">
-                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white">
-                                            <h5 class="mb-3">Proyectos escolares</h5>
-                                            <a href="portafolio/school.php" class="rainbow-button text-white" alt="Ver más">
-                                            </a>
-                                        </div>
-                                </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/escolares/diseños.gif"/>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-4 mb-3 text-center">
+                        <div class="portfolio-item mx-auto">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <h5 class="mb-3">Proyectos escolares</h5>
+                                    <a href="portafolio/school.php" class="rainbow-button text-white" alt="Ver más"></a>
                                 </div>
                             </div>
-                            <!-- Portfolio Item 2-->
-                            <div class="col-md-4 mb-3 text-center">
-                                <div class="portfolio-item mx-auto">
-                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white">
-                                            <h5 class="mb-3">Servicio Social</h5>
-                                            <a href="#" class="rainbow-button text-white" alt="Ver más">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/SS/designweb.gif" alt="..." />
-                                </div>
-                            </div>
-                             <!-- Portfolio Item 3-->
-                             <div class="col-md-4 mb-3 text-center">
-                                <div class="portfolio-item mx-auto">
-                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white">
-                                            <h5 class="mb-3">Residencias</h5>
-                                            <h5><a href="#" class="rainbow-button text-white" alt="Ver más">
-                                            </a></h5>
-                                        </div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/RP/diseños.gif" alt="..." />
-                                </div>
-                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/escolares/diseños.gif"/>
                         </div>
                     </div>
-        </section>
-        <!-- Curriculum Section-->
-        <section class="page-section" id="curriculum">
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-4 mb-3 text-center">
+                        <div class="portfolio-item mx-auto">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <h5 class="mb-3">Servicio Social</h5>
+                                    <a href="#" class="rainbow-button text-white" alt="Ver más"></a>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/SS/designweb.gif" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-4 mb-3 text-center">
+                        <div class="portfolio-item mx-auto">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <h5 class="mb-3">Residencias</h5>
+                                    <a href="#" class="rainbow-button text-white" alt="Ver más"></a>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/RP/diseños.gif" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+        <!-- ☆.☆.☆ CURRICULUM .:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+        <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+        <section class="page-section section-color" id="curriculum" style="--clr-section:#E8EAE9;">
             <div class="container">
                 <!-- Preview-->
                 <div class="img-container align-items-center">
@@ -147,86 +157,86 @@
                 </div>
             </div>
         </section> 
-        <!-- Contact Section-->
+        <div id="wave" class="wave-cont" style="--clr-section:#E8EAE9;"></div>
+        <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+        <!-- ☆.☆.☆ CONTACT .:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+        <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
         <section class="page-section" id="referencias">
             <div class="container">
-						<!-- <h4 class="text-uppercase mb-4 text-center">Referencias Laborales</h4 -->
+				<!-- <h4 class="text-uppercase mb-4 text-center">Referencias Laborales</h4 -->
                 <div>
-						 <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
-						 <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
-						 <div class="ref mb-5">
-							<div class="referencias" style="--clref:#A18594;">
-								<div class="toggle">
-									<button type="button" onclick="product_calif(value=1)">
-										<span></span>
-									</button>  
-								</div>
-								<div class="content-ref">
-									<div class="content">
-										<p>Omar Pérez<br>
-										<span>Gerente de gestión de negocios</span>
-										</p>
-									</div>
-									<div class="red_box">
-										<a href="">
-											<i class="fa-brands fa-whatsapp"></i>
-										</a>
-
-									<h6 class="mt-2 text-white">55 1796 8810 </h6>									</div>
-								</div>
-							</div>		 	
-						</div>
-						 <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
-						 <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
-						 <div class="ref mb-5">
-							<div class="referencias" id="ref2" style="--clref:#AB90B9;">
-								<div class="toggle"> 
-									<button type="button" class="" onclick="product_calif(value=2)">
-										<span></span>
-									</button>  
-								</div>
-								<div class="content-ref">
-									<div class="content">
-										<p>Elizabeth Oropeza<br>
-										<span>Product Owner en Dixi Project</span>
-										</p>
-									</div>
-									<div class="red_box">
-										<a href="">
-											<i class="fa-brands fa-telegram"></i>
-										</a>
-										<h6 class="mt-2 text-white">55 4472 7793 </h6>	
-									</div>
-								</div>
-							</div>
-</div>
-						 <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
-						 <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
-						 <div class="ref mb-5">
-							<div class="referencias" id="ref3" style="--clref:#B19CD9;">
-								<div class="toggle">   
-									<button type="button" class="" onclick="product_calif(value=3)">
-										<span></span>
-									</button>
-								</div>
-								<div class="content-ref">
-									<div class="content">
-										<p>Isaac García<br>
-										<span>Centro de Cómputo TESCHA</span>
-										</p>
-									</div>
-
-									<div class="red_box">
-										<a href="">
-											<i class="fa-brands fa-whatsapp"></i>
-										</a>
-										<h6 class="mt-2 text-white">55 2668 4494</h6>	
-									</div>
-								</div>
-							</div>
-</div>                    	
-                 </div>
-				</div>
+                    <div class="ref mb-5">
+                        <div class="referencias" style="--clref:#A18594;">
+                            <div class="toggle">
+                                <button type="button" onclick="product_calif(value=1)">
+                                    <span></span>
+                                </button>  
+                            </div>
+                            <div class="content-ref">
+                                <div class="content">
+                                    <p>Omar Pérez<br>
+                                    <span>Gerente de gestión de negocios</span>
+                                    </p>
+                                </div>
+                                <div class="red_box">
+                                    <a href="">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                    <h6 class="mt-2 text-white">55 1796 8810 </h6>									
+                                </div>
+                            </div>
+                        </div>		 	
+                    </div>
+                    <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+                    <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+                    <div class="ref mb-5">
+                        <div class="referencias" id="ref2" style="--clref:#AB90B9;">
+                            <div class="toggle"> 
+                                <button type="button" class="" onclick="product_calif(value=2)">
+                                    <span></span>
+                                </button>  
+                            </div>
+                            <div class="content-ref">
+                                <div class="content">
+                                    <p>Elizabeth Oropeza<br>
+                                    <span>Product Owner en Dixi Project</span>
+                                    </p>
+                                </div>
+                                <div class="red_box">
+                                    <a href="">
+                                        <i class="fa-brands fa-telegram"></i>
+                                    </a>
+                                    <h6 class="mt-2 text-white">55 4472 7793 </h6>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+                    <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+                    <div class="ref mb-5">
+                        <div class="referencias" id="ref3" style="--clref:#B19CD9;">
+                            <div class="toggle">   
+                                <button type="button" class="" onclick="product_calif(value=3)">
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="content-ref">
+                                <div class="content">
+                                    <p>Isaac García<br>
+                                    <span>Centro de Cómputo TESCHA</span>
+                                    </p>
+                                </div>
+                                <div class="red_box">
+                                    <a href="">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                    <h6 class="mt-2 text-white">55 2668 4494</h6>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    	
+                </div>
+			</div>
 		</section>
         <!-- Contact Section-->
 <!--         <section class="page-section mb-0" id="contact">
@@ -258,44 +268,50 @@
         						</ul>
                     </div>  
         </section> -->
-        <!-- Copyright Section-->
+         <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+        <!-- ☆.☆.☆ FOOTER .:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
+        <!-- ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:..☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆*:.. -->
         <div class="copyright text-center text-white col-lg-12 bg-secondary">
             <h1 style="padding-top: 20px;">¡Gracias por tu visita!</h1>
-           <ul class="end-info">
-           	<li>Cookies</li>
-            <li>Política de privacidad</li>
-           	<li>Aviso Legal</li>    
-           </ul>
-  			<p style="margin-left: 20px; margin-right: 20px; font-weight: bold;">Para mas información comunicate conmigo a través de mis redes sociales:</p>
-            <ul class="social">
-							<li style="--clr:#30A7DF;">
-								<a href="https://t.me/Orozpe" target="_blanck">
-									<i class="fa-brands fa-telegram"></i>
-								</a>
-							</li>
-							<li style="--clr:#5BF87C;">
-								<a href="https://wa.me/qr/UEJM6HAAHAMPP1" target="_blanck">
-									<i class="fa-brands fa-whatsapp"></i>
-								</a>
-							</li>
-							<li style="--clr:#00B4ED;">
-								<a href="https://join.skype.com/invite/vLCrz2vAJCSz" target="_blanck">
-									<i class="fa-brands fa-skype"></i>
-								</a>
-							</li>
-							<li style="--clr:#c4302b;">
-								<a href="https://www.youtube.com/channel/UCuHS04ykG6GLEuiTyA2jv5Q" target="_blanck">
-									<i class="fa-brands fa-youtube"></i>
-								</a>
-							</li>
-						</ul>        
+            <ul class="end-info">
+                <li>Cookies</li>
+                <li>Política de privacidad</li>
+                <li>Aviso Legal</li>    
+            </ul>
+  			<p style="margin-left: 20px; margin-right: 20px; font-weight: bold;">
+                Para mas información comunicate conmigo a través de mis redes sociales:
+            </p>
+            <!-- <ul class="social"> -->
+            <ul class="social-2">
+                <li style="--clr:#30A7DF;">
+                    <a href="https://t.me/Orozpe" target="_blanck">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </li>
+                <li style="--clr:#5BF87C;">
+                    <a href="https://wa.me/qr/UEJM6HAAHAMPP1" target="_blanck">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li style="--clr:#00B4ED;">
+                    <a href="https://join.skype.com/invite/vLCrz2vAJCSz" target="_blanck">
+                        <i class="fa-brands fa-skype"></i>
+                    </a>
+                </li>
+                <li style="--clr:#c4302b;">
+                    <a href="https://www.youtube.com/channel/UCuHS04ykG6GLEuiTyA2jv5Q" target="_blanck">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+			</ul>        
         </div>
     </body>
 </html>
-<script src="js/ref.js"></script>
+<script src="js/scripts-css.js"></script>
 <script src="js/main.js"></script>
  <!-- Bootstrap core JS-->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
  <!-- Core theme JS-->
  <script src="js/scripts.js"></script>
+  <!-- Animación de texto en portada-->
  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
