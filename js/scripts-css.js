@@ -1,3 +1,5 @@
+
+/*funcion para efecto de desplazamiento en apartado de referencias*/
 function product_calif(id_producto) {
 	let ref = document.querySelector('.referencias');
 	let ref2 = document.getElementById('ref2');
@@ -20,11 +22,10 @@ function product_calif(id_producto) {
 
 	}
 }
-
+/*Scrip función css en header*/
 var typed = new Typed(".auto-type", {
-	strings: ["Orozpe","Ingeniera Informática"],
+	strings: ["Orozpe","Ingeniera en Informática"],
 	typeSpeed: 150,
 	backSpeed: 150,
 	loop:true
-
 })
