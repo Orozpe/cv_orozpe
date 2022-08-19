@@ -319,6 +319,7 @@
       display: flex;
       justify-content:center;
       padding-top: 5px;
+      padding-bottom: 20px;
     }
     .social-2 li{
       position: relative;
