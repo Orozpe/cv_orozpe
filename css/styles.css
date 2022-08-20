@@ -11468,6 +11468,10 @@ html {
   max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  border-left:10px solid #A9B0CB;     
+  border-top: 10px solid #EEB6B4;
+  border-bottom:10px solid #A9B0CB;     
+  border-right:10px solid #EEB6B4;     
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;

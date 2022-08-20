@@ -210,6 +210,7 @@
     /* Animación de botones hover en section portafolio */
     /*-------------------------------------------------*/
   .btn-port {
+    width: 100%;
     box-sizing: border-box;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -229,6 +230,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-align:center;
+    top:0;
   }
   .btn-port a{
     width: 100%;
@@ -257,115 +259,50 @@
 /*-----------------------------------------*/
 
     /*ANIMACIÓN DE REDES SOCIALES*/
-    /* .social{
+    .social{
       position: relative;
+      left:50%;
+      transform: translate(-50%,-50%);
+      margin: 0;
+      padding: 0; 
       display: flex;
-      gap:10px;
       justify-content:center;
-      padding-left:0px;
-        padding-bottom: 20px;
     }
     .social li{
-      position: relative;
       list-style: none;
-      width: 50px;
-      height:50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      transition: 0.5s;
-  
-    }
-    .social li:hover{
-      z-index: 100;
-      transform: scale(0.8);
-      background-color: var(--clr);
-       border-radius: 20px;
-    }
-    .social li::before{
-      content: '';
-      position: absolute;
-      inset: 30px;
-      transition: 0.5s;
-    }
-    .social li:hover::before{
-      inset: 0px
-    }
-    .social li::after{
-      content: '';
-      position: absolute;
-      inset:0;
-      transform: rotate(45deg);
     }
     .social li a{
-        width: 90px;
-        height: 90px;
       position: relative;
+      width: 60px;
+      height:60px;
+      background-color: #f1f1f1;
+      display: block;
+      text-align: center;
+      margin: 0 10px;
+      border-radius: 50%;
+      padding: 6px;
+      box-sizing: border-box;
       text-decoration: none;
-        z-index: 10;
-      font-size:45px;
-      transition: 0.5s;
+      box-shadow: 0 10px 15px rgba(255, 255, 255, 0.4);
+      background: linear-gradient(0deg, #ddd, #fff);
+      transition: .5s;
     }
-  
-    .social li:hover a{
-      font-size: 3em;
-      filter: drop-shadow(0 0 30px var(--clr))
-      drop-shadow(0 0 50px var(--clr))
-      drop-shadow(0 0 70px var(--clr));
-    } */
-    .social-2{
-      position: relative;
-      display: flex;
-      justify-content:center;
-      padding-top: 5px;
-      padding-bottom: 20px;
+    .social li a:hover{
+      box-shadow: 0 2px 5px rgba(22, 16, 16, 0.3);      
     }
-    .social-2 li{
-      position: relative;
-      list-style: none;
-      margin:0 10px;
-      cursor:auto;
+    .social li a .fa-brands{
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: linear-gradient(0deg, #fff, #ddd);
+      border-radius: 50%;
+      line-height: calc(60px - 12px);
+      font-size: 24px;
+      color: #262626;
+      transition: .5s;
     }
-    .social-2 li a{
-      text-decoration: none;
-    }
-    .social-2 li a .fa-brands{
-      font-size:40px;
-      color:#fff;
-    }
-    .social-2 li::before{
-      font-family: fontAwesome;
-      position: absolute;
-      top:-10px;
-      left: 0;
-      font-size:40px;
-      height:0;
-      overflow: hidden;
-      transition: 0.5s ease-in-out;
-    }
-    .social-2 li:nth-child(1)::before{
-      content: '\f2c6';
-      color:var(--clr);
-      /* border-bottom: 4px solid var(--clr); */
-    }
-    .social-2 li:nth-child(2)::before{
-      content: '\f232';
-      color:var(--clr);
-      /* border-bottom: 4px solid var(--clr); */
-    }  
-    .social-2 li:nth-child(3)::before{
-      content: '\f17e';
-      color:var(--clr);
-      /* border-bottom: 4px solid var(--clr); */
-    }
-    .social-2 li:nth-child(4)::before{
-      content: '\f167';
+    .social li a:hover .fa-brands{
       color: var(--clr);
-      /* border-bottom: 4px solid var(--clr); */
-    }
-    .social-2 li:hover::before{
-      height: 130%;
     }
 
   .ref{
@@ -544,3 +481,7 @@
     border-color: #D2D9E2;
     transition-duration: 0.5s;
   }
+.ex{
+  width: 100%;
+  height: 80%;
+}
